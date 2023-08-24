@@ -1,0 +1,85 @@
+<?php
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_page_attachments_alter().
+ *
+ * @param array $attachments
+ */
+function pwa_firebase_page_attachments_alter(array &$attachments) {
+  $config = \Drupal::config('pwa_firebase.settings');
+  if(empty($config->get('firebase_apiKey_id'))){
+    return FALSE;
+  }
+  $currentUser = \Drupal::currentUser();
+  // Show popup permission when user login.
+  if(!empty($config->get('firebase_enable_authorized')) && !$currentUser->isAuthenticated()){
+    return FALSE;
+  }
+  /** @var \Drupal\Core\Routing\AdminContext $admin_context */
+  $admin_context = \Drupal::service('router.admin_context');
+  $route_match = \Drupal::routeMatch();
+  if (!$currentUser->hasPermission('access content') ||
+    $admin_context->isAdminRoute($route_match->getRouteObject())) {
+    return FALSE;
+  }
+
+  $attachments['#attached']['library'][] = 'pwa_firebase/pwa_firebase';
+
+  $firebase_config = [
+    'firebaseConfig' => [
+      'apiKey' => $config->get('firebase_apiKey_id'),
+      'authDomain' => $config->get('firebase_project_id') . '.firebaseapp.com',
+      'projectId' => $config->get('firebase_project_id'),
+      'storageBucket' => $config->get('firebase_project_id') . '.appspot.com',
+      'databaseURL' => 'https://' . $config->get('firebase_project_id') . '.firebaseio.com',
+      'messagingSenderId' => $config->get('firebase_sender_id'),
+      'appId' => $config->get('firebase_app_id'),
+    ],
+    'VapidKey' => $config->get('firebase_vap_id'),
+    'idmessage' => $config->get('firebase_message_id'),
+    'sendToken' => Url::fromRoute('pwa_firebase.send_token')->toString()
+  ];
+  if (!empty($config->get('firebase_measurement_id'))) {
+    $firebase_config['measurementId'] = $config->get('firebase_measurement_id');
+  }
+  $attachments['#attached']['drupalSettings']['pwa_firebase'] = $firebase_config;
+
+  $manifest_link = [
+    '#tag' => 'link',
+    '#attributes' => [
+      'rel' => 'manifest',
+      'href' => Url::fromRoute('pwa_firebase.manifest')->toString(),
+    ],
+  ];
+  $cross_origin = $config->get('firebase_enable_authorized');
+  // Pass credentials if the site is behind HTTP auth.
+  if ($cross_origin) {
+    $manifest_link['#attributes']['crossorigin'] = 'use-credentials';
+  }
+  $attachments['#attached']['html_head'][] = [$manifest_link, 'manifest'];
+/*
+  $serviceWorker = [
+    '#tag' => 'link',
+    '#attributes' => [
+      'rel' => 'serviceWorker',
+      'href' => Url::fromRoute('pwa_firebase.serviceworker')->toString(),
+    ],
+  ];
+  $attachments['#attached']['html_head'][] = [$serviceWorker, 'serviceWorker'];
+*/
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pwa_firebase_theme($existing, $type, $theme, $path) {
+  return [
+    'firebase_notification' => [
+      'variables' => [
+        'attributes' => '',
+      ],
+    ],
+  ];
+}

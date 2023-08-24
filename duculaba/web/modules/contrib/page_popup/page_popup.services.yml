@@ -1,0 +1,6 @@
+services:
+  page_popup_event_subscriber:
+    class: Drupal\page_popup\EventSubscriber\PagePopupSubscriber
+    arguments: ['@router.admin_context', '@entity_type.manager', '@path.matcher', '@current_route_match', '@path_alias.manager', '@path.current', '@state']
+    tags:
+      - { name: event_subscriber, priority: 12 }

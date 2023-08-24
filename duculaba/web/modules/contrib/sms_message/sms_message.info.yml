@@ -1,0 +1,11 @@
+name: Sms message
+type: module
+description: SMS API module
+package: Custom
+core_version_requirement: ^8.8 || ^9 || ^10
+configure: sms_message.settings
+
+# Information added by Drupal.org packaging script on 2022-12-25
+version: '1.0.3'
+project: 'sms_message'
+datestamp: 1672005969

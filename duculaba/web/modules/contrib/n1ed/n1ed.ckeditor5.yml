@@ -1,0 +1,20 @@
+n1ed_flmngr_ckeditor5:
+  ckeditor5:
+    plugins:
+      - flmngr.Flmngr
+  drupal:
+    label: N1ED editor/Flmngr file manager/ImgPen image editor
+    class: Drupal\n1ed\Plugin\CKEditor5Plugin\N1ED
+    library: n1ed/n1ed.ckeditor5
+    admin_library: n1ed/n1ed
+    toolbar_items:
+      upload:
+        label: Upload image or file
+      flmngr:
+        label: Insert image or file
+      imgpen:
+        label: Edit image
+    elements: false
+    conditions:
+      requiresConfiguration:
+        enableN1EDEcoSystem: "true"

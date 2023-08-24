@@ -1,0 +1,61 @@
+#block-logo-contact {
+    padding-left: 0px;
+  #block-logo {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  #block-social {
+    text-align: center;
+    .layout{
+        margin-left: 46px;
+    }
+    .field--type-text-with-summary {
+      margin-top: 20px;
+      ul.list-social {
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  #block-contact{
+    margin-bottom: 15px;
+    .field--type-text-with-summary {
+        margin-top: 0px;
+        #contact
+        ul.contact-list{
+            list-style: none;
+            padding-left: 30px;
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+  }
+}
+#block-danhmucmathang{
+    margin-top: 125px;
+    // margin-left: 90px;
+}
+#block-activitiescontacts{
+    margin-top: 125px;
+    // margin-left: 44px;
+}
+#block-doitac{
+    margin-top: 125px;
+    .field--type-text-with-summary{
+        margin-top: 0px;
+    }
+    h5{
+        margin-left: 125px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+    ul.list-partner{
+        display: flex;
+        list-style: none;
+        padding-left: 0px;
+    }
+}

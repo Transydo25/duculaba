@@ -1,0 +1,54 @@
+cdn:
+  remote: https://getbootstrap.com/
+  version: 5.3.1
+  license:
+    name: MIT
+    url: https://github.com/twbs/bootstrap/blob/main/LICENSE
+  js:
+    //cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js: { type: external, minified: true, crossorigin: anonymous, integrity: "sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"}
+  css:
+    layout:
+      css/drupal.css: {}
+    theme:
+      //cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css:
+        type: external
+        minified: true
+        attributes:
+          crossorigin: anonymous
+          integrity: "sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      //cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css:
+        type: external
+        minified: true
+        attributes:
+          crossorigin: anonymous
+
+drupal.nav-tabs:
+  version: VERSION
+  js:
+    js/nav-tabs.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/once
+    - core/drupal.debounce
+    - core/collapse
+
+drupal.ajax:
+  version: VERSION
+  js:
+    js/ajax.js: {}
+
+drupal.progress:
+  version: VERSION
+  js:
+    js/progress.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+
+drupal.tabledrag:
+  version: VERSION
+  js:
+    js/tabledrag.js: {}

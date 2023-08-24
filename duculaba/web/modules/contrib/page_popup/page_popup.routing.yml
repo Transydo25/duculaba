@@ -1,0 +1,58 @@
+page_popup.admin:
+  path: '/admin/config/system/page_popup'
+  defaults:
+    _title: 'Page Popup'
+    _entity_list: 'page_popup_entity'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'administer page popup'
+
+entity.page_popup_entity.add_form:
+  path: '/admin/config/system/page_popup/add'
+  defaults:
+    _entity_form: page_popup_entity.add
+    _title: 'Add Page Popup'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'create page popup entity'
+
+entity.page_popup_entity.edit_form:
+  path: '/admin/config/system/page_popup/edit/{page_popup_entity}'
+  defaults:
+    _entity_form: page_popup_entity.edit
+    _title: 'Edit Page Popup'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _entity_access: page_popup_entity.update
+
+entity.page_popup_entity.delete_form:
+  path: '/admin/config/system/page_popup/delete/{page_popup_entity}'
+  defaults:
+    _entity_form: page_popup_entity.delete
+    _title: 'Delete Page Popup'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _entity_access: page_popup_entity.delete
+
+page_popup.inline_action:
+  path: '/admin/config/page_popup/{op}/{page_popup_entity}'
+  defaults:
+    _controller: 'Drupal\page_popup\Controller\PagePopupController::ajaxOperation'
+  requirements:
+    _entity_access: page_popup_entity.update
+    _csrf_token: 'TRUE'
+    op: 'enable|disable'
+
+page_popup.settings_form:
+  path: '/admin/config/system/page_popup/settings/{page_popup_entity}'
+  defaults:
+    _entity_form: page_popup_entity.settings
+    _title: 'Edit Page Popup Settings'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _entity_access: page_popup_entity.update

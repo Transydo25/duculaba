@@ -1,0 +1,5 @@
+page_popup.admin:
+  title: 'Page Popup'
+  description: 'Manage the page wise popup used by the site.'
+  route_name: page_popup.admin
+  parent: system.admin_config_system

@@ -1,0 +1,5 @@
+pwa_firebase.send_notification:
+  route_name: pwa_firebase.sent
+  title: 'Send notification with firebase'
+  parent: system.admin_config_services
+  description: 'Send notifications to users.'

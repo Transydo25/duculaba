@@ -1,0 +1,41 @@
+pwa_firebase.configuration:
+  path: '/admin/config/system/pwa_firebase'
+  defaults:
+    _form: Drupal\pwa_firebase\Form\PwaFirebaseConfigForm
+    _title: 'Firebase Push Notification Configuration'
+    number: ''
+  requirements:
+    _permission: 'administer site configuration'
+
+pwa_firebase.sent:
+  path: '/admin/content/notification'
+  defaults:
+    _form: Drupal\pwa_firebase\Form\PwaFirebaseCompose
+    _title: 'Send notification'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+pwa_firebase.manifest:
+  path: /manifest.json
+  defaults:
+    _controller: '\Drupal\pwa_firebase\Controller\PWAController::manifest'
+  requirements:
+    _access: 'TRUE'
+
+pwa_firebase.serviceworker:
+  path: /firebase-messaging-sw.js
+  defaults:
+    _controller: '\Drupal\pwa_firebase\Controller\PWAController::serviceworker'
+    _disable_route_normalizer: 'TRUE'
+  requirements:
+    _access: 'TRUE'
+
+pwa_firebase.send_token:
+  path: /firebase-send-token
+  defaults:
+    _controller: '\Drupal\pwa_firebase\Controller\PWAController::tokenReceived'
+    _disable_route_normalizer: 'TRUE'
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,11 @@
+administer sms message:
+  title: 'Administer sms message settings'
+  restrict access: true
+delete sms message:
+  title: Delete sms message
+create sms message:
+  title: Create sms message
+view sms message:
+  title: View sms message
+edit sms message:
+  title: Edit sms message

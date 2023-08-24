@@ -1,0 +1,16 @@
+entity.sms_message.settings:
+  title: 'SMS Message types'
+  description: 'Configure a SMS Message entity type.'
+  route_name:  entity.sms_message.settings
+  parent: system.admin_structure
+entity.sms_message.collection:
+  title: 'SMS Messages'
+  description: 'List of sms messages.'
+  route_name: entity.sms_message.collection
+  parent: system.admin_content
+
+sms_message.settings:
+  title: Settings
+  parent: system.admin_config_system
+  route_name: sms_message.settings
+  weight: 10

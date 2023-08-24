@@ -1,0 +1,12 @@
+name: 'Page popup'
+description: 'Show popup message on specific pages.'
+package: User Interface
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: page_popup.admin
+
+# Information added by Drupal.org packaging script on 2021-03-22
+version: '8.x-1.5'
+project: 'page_popup'
+datestamp: 1616420294

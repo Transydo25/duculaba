@@ -1,0 +1,35 @@
+entity.sms_message.settings:
+  path: 'admin/structure/sms-message'
+  defaults:
+    _form: '\Drupal\sms_message\Form\SmsMessageSettingsForm'
+    _title: 'SMS Message'
+  requirements:
+    _permission: 'administer sms message'
+
+sms_message.settings:
+  path: '/admin/config/system/sms'
+  defaults:
+    _title: 'Settings'
+    _form: 'Drupal\sms_message\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+sms_message.api.get:
+  path: '/api/sms/{token}'
+  methods: [GET]
+  defaults:
+    _title: 'Api messages'
+    _controller: '\Drupal\sms_message\Controller\SmsMessageController::apiGet'
+  requirements:
+    # Request from application android, security with token.
+    _access: 'TRUE'
+
+sms_message.api.post:
+  path: '/api/sms/{token}'
+  methods: [POST]
+  defaults:
+    _title: 'Api change status sent'
+    _controller: '\Drupal\sms_message\Controller\SmsMessageController::apiPost'
+  requirements:
+    # Post request from application so it have to open public.
+    _access: 'TRUE'

@@ -1,0 +1,24 @@
+administer page popup:
+  title: 'Administer all page popup'
+  description: 'Allows all permissions for the module.'
+  restrict access: true
+
+view page popup entity:
+  title: 'View page popup Entity'
+  description: "Allows to view 'page popup entity'."
+  restrict access: false
+
+create page popup entity:
+  title: 'Create page popup Entity'
+  description: "Allows to create 'page popup entity'."
+  restrict access: true
+
+edit page popup entity:
+  title: 'Edit page popup Entity'
+  description: "Allows to edit 'page popup entity'."
+  restrict access: true
+
+delete page popup entity:
+  title: 'Delete page popup Entity'
+  description: "Allows to delete 'page popup entity'."
+  restrict access: true

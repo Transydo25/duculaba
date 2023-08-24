@@ -1,0 +1,5 @@
+{% set attributes = attributes.addClass('btn-group') %}
+<div {{ attributes }} role="group" aria-label="Notification permission">
+  <span id="pwa_firebase_notifications" class="btn btn-success"><i class="fas fa-bell bi bi-bell"></i> {{ 'Enable notifications'|t }}</span>
+  <span id="pwa_firebase_remove_token" class="btn btn-danger"><i class="fas fa-unlink bi bi-bell-slash"></i> {{ 'Disable notification'|t }}</span>
+</div>

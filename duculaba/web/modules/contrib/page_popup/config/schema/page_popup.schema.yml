@@ -1,0 +1,31 @@
+page_popup.rule.*:
+  type: config_entity
+  label: 'Page popup rule'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    uuid:
+      type: string
+      label: 'UUID'
+    label:
+      type: label
+      label: 'Label'
+    weight:
+      type: integer
+      label: 'Weight'
+    status:
+      type: boolean
+      label: 'Status'
+    message_title:
+      type: string
+      label: 'Message title'
+    message_body:
+      type: string
+      label: 'Message body'
+    visibility:
+      type: sequence
+      label: 'Visibility Conditions'
+      sequence:
+        type: condition.plugin.[id]
+        label: 'Visibility Condition'

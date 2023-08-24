@@ -1,0 +1,23 @@
+{
+  "name": "drupal/pwa_firebase",
+  "description": "Integration with Firebase",
+  "type": "drupal-module",
+  "minimum-stability": "stable",
+  "homepage": "https://www.drupal.org/project/pwa_firebase",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/pwa_firebase",
+    "source": "https://git.drupalcode.org/project/pwa_firebase"
+  },
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "NGUYEN Bao",
+      "email": "n.bao@yahoo.com",
+      "homepage": "https://www.drupal.org/u/lazzyvn",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "drupal/core": "^8 || ^9"
+  }
+}

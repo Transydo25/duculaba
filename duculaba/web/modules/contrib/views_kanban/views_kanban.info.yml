@@ -1,0 +1,12 @@
+name: 'Views kanban'
+type: module
+description: 'The plugin displays the kanban view'
+package: 'Views'
+core_version_requirement: '^9 || ^10'
+dependencies:
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2023-08-13
+version: '1.0.19'
+project: 'views_kanban'
+datestamp: 1691950548

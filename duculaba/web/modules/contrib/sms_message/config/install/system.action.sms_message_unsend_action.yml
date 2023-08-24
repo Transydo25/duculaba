@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - sms_message
+  module:
+    - sms_message
+id: sms_message_unsend_action
+label: 'Mark unsent sms'
+type: sms_message
+plugin: 'sms_message_unsend_action'
+configuration: {  }

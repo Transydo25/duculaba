@@ -1,0 +1,11 @@
+firebase_endpoint: 'https://fcm.googleapis.com/fcm/send'
+firebase_server_key: ''
+firebase_sender_id: ''
+firebase_project_id: ''
+firebase_apiKey_id: ''
+firebase_app_id: ''
+firebase_vap_id: ''
+firebase_measurement_id: ''
+firebase_version: '9.6.7'
+firebase_enable_authorized: FALSE
+firebase_message_id: '#message'

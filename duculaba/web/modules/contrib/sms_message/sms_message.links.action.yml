@@ -1,0 +1,5 @@
+sms_message.add_form:
+  title: 'Add sms message'
+  route_name: entity.sms_message.add_form
+  appears_on:
+    - entity.sms_message.collection

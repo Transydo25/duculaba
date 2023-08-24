@@ -1,0 +1,7 @@
+address_suggestion.addresses:
+  path: '/address/suggestion/{entity_type}/{bundle}/{field_name}'
+  defaults:
+    _controller: '\Drupal\address_suggestion\Controller\AddressSuggestion::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'

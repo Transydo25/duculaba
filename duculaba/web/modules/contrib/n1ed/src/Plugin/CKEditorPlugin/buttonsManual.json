@@ -1,0 +1,227 @@
+[
+    {
+        "name": "Grid",
+        "title": "Grid",
+        "hint": ""
+    },
+    {
+        "name": "BlockAdd",
+        "title": "Add Block",
+        "hint": ""
+    },
+    {
+        "name": "BlockAddUp",
+        "title": "",
+        "hint": "Add block before"
+    },
+    {
+        "name": "BlockSave",
+        "title": "",
+        "hint": "Save as template"
+    },
+    {
+        "name": "BlockMoveUp",
+        "title": "",
+        "hint": "Move block up"
+    },
+    {
+        "name": "BlockMoveDown",
+        "title": "",
+        "hint": "Move block down"
+    },
+    {
+        "name": "BlockDuplicate",
+        "title": "",
+        "hint": "Duplicate block"
+    },
+    {
+        "name": "BlockDelete",
+        "title": "",
+        "hint": "Delete block"
+    },
+    {
+        "name": "AddWidget",
+        "title": "Add widget",
+        "hint": ""
+    },
+    {
+        "name": "EditWidget",
+        "title": "Edit Widget",
+        "hint": ""
+    },
+    {
+        "name": "DeleteWidget",
+        "title": "",
+        "hint": "Delete widget"
+    },
+    {
+        "name": "SaveWidget",
+        "title": "",
+        "hint": "Save as template"
+    },
+    {
+        "name": "AddTextUp",
+        "title": "",
+        "hint": "Add text before"
+    },
+    {
+        "name": "AddTextDown",
+        "title": "",
+        "hint": "Add text after"
+    },
+    {
+        "name": "Image",
+        "title": "",
+        "hint": "Insert an image"
+    },
+    {
+        "name": "ImagePreview2",
+        "title": "",
+        "hint": "Insert image preview"
+    },
+    {
+        "name": "ImageGallery2",
+        "title": "",
+        "hint": "Insert a gallery"
+    },
+    {
+        "name": "FontAwesome",
+        "title": "",
+        "hint": "Insert Font Awesome icon"
+    },
+    {
+        "name": "YouTube",
+        "title": "",
+        "hint": "Insert YouTube video"
+    },
+    {
+        "name": "Table",
+        "title": "",
+        "hint": "Insert a table"
+    },
+    {
+        "name": "Link",
+        "title": "",
+        "hint": "Create a link"
+    },
+    {
+        "name": "Anchor",
+        "title": "",
+        "hint": "Create an anchor"
+    },
+    {
+        "name": "Button",
+        "title": "",
+        "hint": "Insert a button"
+    },
+    {
+        "name": "Tabs",
+        "title": "",
+        "hint": "Insert tabs"
+    },
+    {
+        "name": "Carousel",
+        "title": "",
+        "hint": "Insert a carousel"
+    },
+    {
+        "name": "Accordion",
+        "title": "",
+        "hint": "Insert an accordion"
+    },
+    {
+        "name": "Alert",
+        "title": "",
+        "hint": "Insert an alert"
+    },
+    {
+        "name": "Badge",
+        "title": "",
+        "hint": "Insert a badge"
+    },
+    {
+        "name": "Header",
+        "title": "",
+        "hint": "Insert a header"
+    },
+    {
+        "name": "IFrame",
+        "title": "",
+        "hint": "Insert embedded page"
+    },
+    {
+        "name": "HTML",
+        "title": "",
+        "hint": "Insert HTML snippet"
+    },
+    {
+        "name": "CustomTemplates",
+        "title": "",
+        "hint": "Custom widgets"
+    },
+    {
+        "name": "Placeholder",
+        "title": "",
+        "hint": "Insert Placeholder widget"
+    },
+    {
+        "name": "Upload",
+        "title": "Upload",
+        "hint": ""
+    },
+    {
+        "name": "Flmngr",
+        "title": "Browse",
+        "hint": ""
+    },
+    {
+        "name": "ImgPen",
+        "title": "Edit image",
+        "hint": ""
+    },
+    {
+        "name": "Translator",
+        "title": "",
+        "hint": "Translate selected text"
+    },
+    {
+        "name": "TranslatorReverse",
+        "title": "",
+        "hint": "Reverse direction"
+    },
+    {
+        "name": "TranslatorConf",
+        "title": "",
+        "hint": "Translation options"
+    },
+    {
+        "name": "Txt42",
+        "title": "AI Text",
+        "hint": ""
+    },
+    {
+        "name": "Txt42Less",
+        "title": "",
+        "hint": "Less AI Text"
+    },
+    {
+        "name": "Txt42More",
+        "title": "",
+        "hint": "More AI text"
+    },
+    {
+        "name": "Info",
+        "title": "",
+        "hint": "Info"
+    },
+    {
+        "name": "Configure",
+        "title": "",
+        "hint": "Configure"
+    },
+    {
+        "name": "Maximize",
+        "title": "Maximize",
+        "hint": ""
+    }
+]

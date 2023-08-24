@@ -1,0 +1,7 @@
+ckeditor5.plugin.n1ed_flmngr_ckeditor5:
+  type: mapping
+  label: CKEditor 5 plugin schema
+  mapping:
+    enableN1EDEcoSystem:
+      type: string
+      label: 'Enable N1ED'

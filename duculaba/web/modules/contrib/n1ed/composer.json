@@ -1,0 +1,27 @@
+{
+    "name": "drupal/n1ed",
+    "description": "Multiplugin for CKEditor 4. Includes Bootstrap editor, file manager, image editor, etc..",
+    "type": "drupal-module",
+    "homepage": "https://drupal.org/project/n1ed",
+    "authors": [
+        {
+            "name": "Dmitriy Komarov",
+            "email": "support@helpdesk.edsdk.com",
+            "homepage": "https://n1ed.com",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Ilia Kandaurov",
+            "email": "ilia@kandaurov.su",
+            "role": "Contributor"
+        }
+    ],
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+      "drupal/core": "^8 || ^9 || ^10",
+      "ext-json": "*",
+      "ext-gd": "*",
+      "ext-curl": "*"
+    }
+}

@@ -1,0 +1,62 @@
+n1ed.flmngr:
+  path: '/flmngr'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\FlmngrController::flmngr'
+    _title: 'Flmngr '
+  requirements:
+    _permission: 'administer flmngr files'
+    _csrf_request_header_token: 'TRUE'
+
+n1ed.flmngrLegacy:
+  path: '/flmngr-legacy'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\FlmngrControllerLegacy::flmngr'
+    _title: 'Flmngr backend (legacy)'
+  requirements:
+    _permission: 'administer flmngr files'
+    _csrf_request_header_token: 'TRUE'
+
+n1ed.setApiKey:
+  path: '/admin/config/n1ed/setApiKey'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\N1EDController::setApiKey'
+    _title: 'Set API key request'
+  methods: [POST]
+  requirements:
+    _permission: 'administer n1ed configuration'
+    _csrf_request_header_token: 'TRUE'
+
+n1ed.config:
+  path: '/admin/config/content/n1ed'
+  defaults:
+    _form: '\Drupal\n1ed\Form\N1EDConfigForm'
+    _title: 'N1ED Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+n1ed.useFlmngrOnFileFields:
+  path: '/admin/config/n1ed/toggleUseFlmngrOnFileFields'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\N1EDController::toggleUseFlmngrOnFileFields'
+    _title: 'Set Flmngr for file and image field'
+  methods: [POST]
+  requirements:
+    _permission: 'administer n1ed configuration'
+
+n1ed.useLegacyFlmngrBackend:
+  path: '/admin/config/n1ed/toggleUseLegacyFlmngrBackend'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\N1EDController::toggleUseLegacyFlmngrBackend'
+    _title: 'Set use legacy Flmngr backend'
+  methods: [POST]
+  requirements:
+    _permission: 'administer n1ed configuration'
+
+n1ed.plugin:
+  path: '/n1ed-plugin'
+  defaults:
+    _controller: '\Drupal\n1ed\Controller\N1EDController::getPluginJs'
+    _title: 'Get JS of the plugin'
+    methods: [GET]
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="top"
+        android:hint="Enter message"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Test sending SMS" />
+
+        <Button
+            android:id="@+id/btOnService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="On Service" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/et_endpoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:hint="URL API endpoint to get list sms"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Save URL" />
+
+</LinearLayout>

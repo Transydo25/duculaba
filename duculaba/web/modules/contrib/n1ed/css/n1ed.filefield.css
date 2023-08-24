@@ -1,0 +1,41 @@
+.n1ed-file-field {
+  display: flex;
+  margin-bottom: 1em;
+
+  /* To correctly render two file/image fields in comment form (they are rendered as float columns),
+     otherwise they will be rendered as too thin. */
+  min-width: 170px;
+}
+
+.n1ed-file-field .js-form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.n1ed-file-field > button {
+  height: 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 14px;
+  border-radius: 20em;
+}
+
+.n1ed-file-field > button:hover {
+  border-color: #585858;
+}
+
+.n1ed-file-field > button > img {
+  margin: -1px 0 0 0;
+  opacity: 0.8;
+}
+
+.n1ed-file-field > button:hover > img,
+.n1ed-file-field > button:focus > img,
+.n1ed-file-field > button:active > img {
+  opacity: 1;
+}
+
+.n1ed-file-field > button > img + span {
+  padding-left: 7px;
+}

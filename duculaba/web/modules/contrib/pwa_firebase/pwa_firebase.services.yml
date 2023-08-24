@@ -1,0 +1,4 @@
+services:
+  pwa_firebase.send:
+    class: Drupal\pwa_firebase\Firebase
+    arguments: [ "@config.factory", "@http_client", "@database"]

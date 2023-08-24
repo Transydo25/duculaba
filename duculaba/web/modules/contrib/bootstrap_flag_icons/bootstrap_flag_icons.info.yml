@@ -1,0 +1,10 @@
+name: Bootstrap flag icons
+type: module
+description: Provides a Bootstrap 5 dropdown button to switch between available languages.
+package: Multilingual
+core_version_requirement: ^9 || ^10
+
+# Information added by Drupal.org packaging script on 2022-07-19
+version: '1.0.0'
+project: 'bootstrap_flag_icons'
+datestamp: 1658273794

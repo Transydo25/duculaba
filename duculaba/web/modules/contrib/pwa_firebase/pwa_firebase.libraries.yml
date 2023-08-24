@@ -1,0 +1,20 @@
+pwa_firebase:
+  version: 9.8.3
+  js:
+    "//www.gstatic.com/firebasejs/9.8.3/firebase-app-compat.js": { type: external }
+    "//www.gstatic.com/firebasejs/9.8.3/firebase-messaging-compat.js": { type: external }
+    js/bootstrap-notify.js: {}
+    js/notification.js: { attributes: { type: module } }
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal
+
+pwa_firebase_composer:
+  version: VERSION
+  js:
+    js/compose.js: {}
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal

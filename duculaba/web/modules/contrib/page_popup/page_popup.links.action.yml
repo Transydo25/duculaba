@@ -1,0 +1,5 @@
+entity.page_popup_entity.add_form:
+  title: 'Add a Page Popup Entity'
+  route_name: entity.page_popup_entity.add_form
+  appears_on:
+    - page_popup.admin

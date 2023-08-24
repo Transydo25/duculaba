@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for Page Popup Message module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function page_popup_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'page_popup.admin':
+      $output = '<p>' . t('Show page wise popup.') . '</p>';
+      return $output;
+
+    case 'help.page.page_popup':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Show page wise popup.') . '</p>';
+      return $output;
+
+  }
+}

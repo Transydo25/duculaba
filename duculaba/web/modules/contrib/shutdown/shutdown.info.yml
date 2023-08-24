@@ -1,0 +1,11 @@
+name: 'Website shutdown'
+description: 'Provides ability to shut down a website.'
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+configure: shutdown.settings
+package: Other
+
+# Information added by Drupal.org packaging script on 2022-11-18
+version: '2.0.0'
+project: 'shutdown'
+datestamp: 1668783543

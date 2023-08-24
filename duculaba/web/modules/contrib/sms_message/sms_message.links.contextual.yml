@@ -1,0 +1,10 @@
+entity.sms_message.edit_form:
+  route_name: entity.sms_message.edit_form
+  group: sms_message
+  title: Edit
+
+entity.sms_message.delete_form:
+  route_name: entity.sms_message.delete_form
+  group: sms_message
+  title: Delete
+  weight: 10

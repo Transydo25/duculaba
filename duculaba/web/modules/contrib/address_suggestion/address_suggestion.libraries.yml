@@ -1,0 +1,7 @@
+address_suggestion:
+  js:
+    js/address_suggestion.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

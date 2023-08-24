@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar-brand {
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.navbar-expand-lg {
+  margin-top: 40px;
+}
+
+form#search-block-form {
+  position: relative;
+  border-bottom: solid 1px black;
+}
+form#search-block-form .form-type-search input {
+  border: none;
+}
+form#search-block-form #edit-actions button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: none;
+  border: none;
+  color: black;
+}
+
+.field--name-body {
+  margin-top: 40px;
+}
+.field--name-body p {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700px;
+  font-size: 64px;
+}
+.field--name-body #list-menu {
+  display: flex;
+  justify-content: center;
+}
+.field--name-body #list-menu .py-5 {
+  min-height: 170px;
+  width: 920px;
+}
+.field--name-body #list-menu .py-5 div {
+  flex-wrap: wrap;
+}
+.field--name-body #list-menu .py-5 div a {
+  margin: 0px;
+}
+.field--name-body #list-menu .py-5 div a {
+  text-decoration: none;
+  color: #3d281a;
+  font-weight: 700;
+  text-align: center;
+}
+
+.field--type-text-with-summary a img {
+  width: 100%;
+}
+
+#title-home .layout__region--content {
+  display: flex;
+  justify-content: center;
+}
+#title-home .field--type-text-with-summary {
+  width: 1210px;
+  text-align: center;
+}
+#title-home .field--type-text-with-summary .fs-36 {
+  font-size: 36px;
+}
+#title-home .field--type-text-with-summary p {
+  font-size: 16px;
+}
+
+#block-video .field--type-text-with-summary img {
+  width: 100%;
+}
+
+#block-logo-contact {
+  padding-left: 0px;
+}
+#block-logo-contact #block-logo {
+  text-align: center;
+  margin-bottom: 0px;
+}
+#block-logo-contact #block-social {
+  text-align: center;
+}
+#block-logo-contact #block-social .layout {
+  margin-left: 46px;
+}
+#block-logo-contact #block-social .field--type-text-with-summary {
+  margin-top: 20px;
+}
+#block-logo-contact #block-social .field--type-text-with-summary ul.list-social {
+  display: flex;
+  list-style: none;
+}
+#block-logo-contact #block-social .field--type-text-with-summary ul.list-social li {
+  margin-right: 10px;
+}
+#block-logo-contact #block-contact {
+  margin-bottom: 15px;
+}
+#block-logo-contact #block-contact .field--type-text-with-summary {
+  margin-top: 0px;
+}
+#block-logo-contact #block-contact .field--type-text-with-summary #contact ul.contact-list {
+  list-style: none;
+  padding-left: 30px;
+}
+#block-logo-contact #block-contact .field--type-text-with-summary #contact ul.contact-list li {
+  margin-bottom: 5px;
+}
+
+#block-danhmucmathang {
+  margin-top: 125px;
+}
+
+#block-activitiescontacts {
+  margin-top: 125px;
+}
+
+#block-doitac {
+  margin-top: 125px;
+}
+#block-doitac .field--type-text-with-summary {
+  margin-top: 0px;
+}
+#block-doitac h5 {
+  margin-left: 125px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+#block-doitac ul.list-partner {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #3D281A;
+  font-weight: 700px;
+}
+
+main {
+  background: #D9D9D9;
+}
+
+header {
+  background: #FFFFFF;
+}
+
+footer {
+  background: #FFFFFF;
+  flex-wrap: nowrap;
+}
+
+/*# sourceMappingURL=style.css.map */
